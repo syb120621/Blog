@@ -31,13 +31,19 @@ public class JwtFilter extends AuthenticatingFilter {
 
         //获取token
         HttpServletRequest request = (HttpServletRequest) servletRequest;
+//        从请求头中取出jwt
         String jwt=request.getHeader("Authorization");
         if(StringUtils.isEmpty(jwt)){
             return null;
         }
         return new JwtToken(jwt);
+//        之后将进入到Realm中处理
     }
 
+/*
+*   这个类进行shiro的登录校验
+*
+* */
     @Override
     protected boolean onAccessDenied(ServletRequest servletRequest, ServletResponse servletResponse) throws Exception {
 
@@ -45,6 +51,7 @@ public class JwtFilter extends AuthenticatingFilter {
         HttpServletRequest request = (HttpServletRequest) servletRequest;
         String jwt=request.getHeader("Authorization");
         if(StringUtils.isEmpty(jwt)){
+//            请求头中没有jwt时放行
             return true;
         }else{
             //校验jwt
@@ -57,6 +64,11 @@ public class JwtFilter extends AuthenticatingFilter {
             }
         }
 
+        /*
+        *
+        * 执行登录出现异常时进入此类处理
+        *
+        * */
     @Override
     protected boolean onLoginFailure(AuthenticationToken token, AuthenticationException e, ServletRequest request, ServletResponse response) {
 

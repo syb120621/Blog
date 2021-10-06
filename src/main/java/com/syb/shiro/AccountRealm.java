@@ -13,6 +13,10 @@ import org.apache.shiro.subject.PrincipalCollection;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
+/*
+*  该类作为Realm的重写,重写两个类（授权认证）
+*
+* */
 @Component
 public class AccountRealm extends AuthorizingRealm {
 
@@ -24,6 +28,7 @@ public class AccountRealm extends AuthorizingRealm {
 
     @Override
     public boolean supports(AuthenticationToken token) {
+//        判断该token是否是JwtToken
         return token instanceof JwtToken;
     }
 
@@ -38,9 +43,8 @@ public class AccountRealm extends AuthorizingRealm {
     protected AuthenticationInfo doGetAuthenticationInfo(AuthenticationToken token) throws AuthenticationException {
 
         JwtToken jwtToken = (JwtToken) token;
-
-        Claims claim = jwtUtils.getClaimByToken((String) jwtToken.getPrincipal());
-        String userId = claim.getSubject();
+        Claims claim = jwtUtils.getClaimByToken((String) jwtToken.getPrincipal());//获取claims
+        String userId = claim.getSubject();//获取userid
 
         User user = userService.getById(userId);
         if(user==null){
@@ -51,11 +55,13 @@ public class AccountRealm extends AuthorizingRealm {
             throw new LockedAccountException("账户被锁定");
         }
 
+//        把用户的一些基本信息返回给shiro
         AccountProfile profile=new AccountProfile();
         BeanUtil.copyProperties(user,profile);
 
-        System.out.println("--------------------------");
+//        System.out.println("--------------------------");
 
+//        shiro通过一些工具类可以获取到用户的一些信息
         return new SimpleAuthenticationInfo(profile,jwtToken.getPrincipal(),getName());
     }
 }

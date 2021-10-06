@@ -55,6 +55,7 @@ public class AccountController {
     @RequiresAuthentication
     @GetMapping("/logout")
     public Result logout(){
+//        交给shiro进行退出
         SecurityUtils.getSubject().logout();
         return Result.succ(null);
     }

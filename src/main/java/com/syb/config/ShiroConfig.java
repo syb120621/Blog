@@ -28,6 +28,7 @@ public class ShiroConfig {
     @Autowired
     JwtFilter jwtFilter;
 
+//    重写 sessionManager，securityManager两个类，并自己配置AccountRealm
     @Bean
     public SessionManager sessionManager(RedisSessionDAO redisSessionDAO) {
         DefaultWebSessionManager sessionManager = new DefaultWebSessionManager();
@@ -46,11 +47,13 @@ public class ShiroConfig {
         securityManager.setCacheManager(redisCacheManager);
         return securityManager;
     }
+
+//    过滤器链
     @Bean
     public ShiroFilterChainDefinition shiroFilterChainDefinition() {
         DefaultShiroFilterChainDefinition chainDefinition = new DefaultShiroFilterChainDefinition();
         Map<String, String> filterMap = new LinkedHashMap<>();
-        filterMap.put("/**", "jwt"); // 主要通过注解方式校验权限
+        filterMap.put("/**", "jwt"); // 主要通过注解方式校验权限（所有请求都要经过过滤器（shiroFilterFactoryBean类中的jwtFilter））
         chainDefinition.addPathDefinitions(filterMap);
         return chainDefinition;
     }
@@ -60,6 +63,7 @@ public class ShiroConfig {
         ShiroFilterFactoryBean shiroFilter = new ShiroFilterFactoryBean();
         shiroFilter.setSecurityManager(securityManager);
 
+//        将jwt filter添加到shiro的过滤链中
         Map<String, Filter> filters = new HashMap<>();
         filters.put("jwt", jwtFilter);
         shiroFilter.setFilters(filters);

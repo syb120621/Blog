@@ -9,7 +9,6 @@ import com.syb.common.lang.Result;
 import com.syb.entity.Blog;
 import com.syb.service.IBlogService;
 import com.syb.util.ShiroUtil;
-import org.apache.shiro.SecurityUtils;
 import org.apache.shiro.authz.annotation.RequiresAuthentication;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.util.Assert;
@@ -42,6 +41,14 @@ public class BlogController {
         return Result.succ(pageData);
     }
 
+    @GetMapping("/blogsBySearch")
+    public Result blogsBySearch(@RequestParam(defaultValue = "1") Integer currentPage,@RequestParam String queryInfo){
+        Page page=new Page(currentPage,5);
+        IPage pageData = blogService.page(page, new QueryWrapper<Blog>().like("title",queryInfo).orderByDesc("created"));
+
+        return Result.succ(pageData);
+    }
+
     @GetMapping("/blog/{id}")
     public Result detail(@PathVariable(name = "id") Long id){
         Blog blog=blogService.getById(id);
@@ -53,6 +60,7 @@ public class BlogController {
     @RequiresAuthentication
     @PostMapping("/blog/edit")
     public Result edit(@Validated @RequestBody Blog blog){
+        System.out.println(blog);
         Blog temp=null;
         if(blog.getId()!=null){
             temp=blogService.getById(blog.getId());

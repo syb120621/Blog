@@ -1,7 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="be41b084-3d02-4879-aef2-99c802b1fbc0" name="Default Changelist" comment="" />
+    <list default="true" id="be41b084-3d02-4879-aef2-99c802b1fbc0" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/syb/config/ShiroConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/syb/config/ShiroConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/syb/controller/AccountController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/syb/controller/AccountController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/syb/controller/BlogController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/syb/controller/BlogController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/syb/shiro/AccountRealm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/syb/shiro/AccountRealm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/syb/shiro/JwtFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/syb/shiro/JwtFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/syb/util/JwtUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/syb/util/JwtUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/syb/config/ShiroConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/syb/config/ShiroConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/syb/controller/AccountController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/syb/controller/AccountController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/syb/controller/BlogController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/syb/controller/BlogController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/syb/shiro/AccountRealm.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/syb/shiro/AccountRealm.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/syb/shiro/JwtFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/syb/shiro/JwtFilter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2020-06-27T09-44-43_036-jvmRun1.dump" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.syb.VueblogApplicationTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.syb.VueblogApplicationTests.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.syb.VueblogApplicationTests.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/com.syb.VueblogApplicationTests.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/vueblog-0.0.1-SNAPSHOT.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/target/vueblog-0.0.1-SNAPSHOT.jar.original" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,6 +29,9 @@
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
@@ -40,7 +59,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../SSM整合框架" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -66,6 +85,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="text" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="text" />
+      <module name="vueblog" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="VueblogApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="vueblog" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.syb.VueblogApplication" />
@@ -75,6 +101,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.text" />
         <item itemvalue="Application.CodeGenerator" />
       </list>
     </recent_temporary>
@@ -121,6 +148,33 @@
       <workItem from="1597138164406" duration="137000" />
       <workItem from="1597139597938" duration="48000" />
       <workItem from="1598842045049" duration="890000" />
+      <workItem from="1599011547022" duration="283000" />
+      <workItem from="1599012087623" duration="96000" />
+      <workItem from="1599022098237" duration="1221000" />
+      <workItem from="1599109913574" duration="113000" />
+      <workItem from="1599110188544" duration="400000" />
+      <workItem from="1599112415251" duration="2672000" />
+      <workItem from="1599117399078" duration="2785000" />
+      <workItem from="1599138436924" duration="4380000" />
+      <workItem from="1599145801316" duration="136000" />
+      <workItem from="1599145972813" duration="478000" />
+      <workItem from="1599178177627" duration="1451000" />
+      <workItem from="1599187424805" duration="6381000" />
+      <workItem from="1599290320261" duration="1850000" />
+      <workItem from="1599294376187" duration="6000" />
+      <workItem from="1599305313369" duration="171000" />
+      <workItem from="1599466340331" duration="5175000" />
+      <workItem from="1599475945813" duration="97000" />
+      <workItem from="1599531877397" duration="1640000" />
+      <workItem from="1599533555270" duration="177000" />
+      <workItem from="1601898710351" duration="663000" />
+      <workItem from="1601990800956" duration="26000" />
+      <workItem from="1602153199827" duration="117000" />
+      <workItem from="1602165959801" duration="59000" />
+      <workItem from="1602219171446" duration="23000" />
+      <workItem from="1621765077170" duration="4193000" />
+      <workItem from="1621937215009" duration="1194000" />
+      <workItem from="1633492718312" duration="2735000" />
     </task>
     <servers />
   </component>
@@ -128,73 +182,25 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="361" y="71" key="#Notifications" timestamp="1594557040434">
+    <state width="1493" height="210" key="GridCell.Tab.0.bottom" timestamp="1633493395746">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="71" key="#Notifications/0.0.1536.824@0.0.1536.824" timestamp="1594557040434" />
-    <state x="361" y="71" key="#Project_Structure" timestamp="1593238230773">
+    <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1633493395746" />
+    <state width="1493" height="210" key="GridCell.Tab.0.center" timestamp="1633493395746">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="71" key="#Project_Structure/0.0.1536.824@0.0.1536.824" timestamp="1593238230773" />
-    <state x="574" y="122" key="#com.intellij.ide.util.MemberChooser" timestamp="1593078930267">
+    <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1633493395746" />
+    <state width="1493" height="210" key="GridCell.Tab.0.left" timestamp="1633493395746">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="574" y="122" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1593078930267" />
-    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1597137239312">
+    <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1633493395746" />
+    <state width="1493" height="210" key="GridCell.Tab.0.right" timestamp="1633493395746">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1597137239312" />
-    <state width="1493" height="210" key="GridCell.Tab.0.bottom" timestamp="1594044080320">
+    <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1633493395746" />
+    <state x="461" y="240" key="com.intellij.ide.util.TipDialog" timestamp="1633492797050">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1594044080320" />
-    <state width="1493" height="210" key="GridCell.Tab.0.center" timestamp="1594044080320">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1594044080320" />
-    <state width="1493" height="210" key="GridCell.Tab.0.left" timestamp="1594044080320">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1594044080320" />
-    <state width="1493" height="210" key="GridCell.Tab.0.right" timestamp="1594044080320">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1594044080320" />
-    <state width="1493" height="210" key="GridCell.Tab.1.bottom" timestamp="1594044080320">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1493" height="210" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1594044080320" />
-    <state width="1493" height="210" key="GridCell.Tab.1.center" timestamp="1594044080320">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1493" height="210" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1594044080320" />
-    <state width="1493" height="210" key="GridCell.Tab.1.left" timestamp="1594044080320">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1493" height="210" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1594044080320" />
-    <state width="1493" height="210" key="GridCell.Tab.1.right" timestamp="1594044080320">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1493" height="210" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1594044080320" />
-    <state x="408" y="110" key="NewModule_or_Project.wizard" timestamp="1594557329755">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="408" y="110" key="NewModule_or_Project.wizard/0.0.1536.824@0.0.1536.824" timestamp="1594557329755" />
-    <state x="270" y="54" key="SettingsEditor" timestamp="1593066923550">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="270" y="54" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1593066923550" />
-    <state x="449" y="236" key="com.intellij.ide.util.TipDialog" timestamp="1594556979470">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="449" y="236" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1594556979470" />
-    <state x="178" y="114" key="new project wizard" timestamp="1593760171020">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="178" y="114" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1593760171020" />
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1593067425604">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1593067425604" />
+    <state x="461" y="240" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1633492797050" />
   </component>
 </project>
